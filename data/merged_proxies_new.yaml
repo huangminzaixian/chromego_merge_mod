@@ -356,9 +356,9 @@ proxies:
   - h3
 - name: Unknown_hy_1
   type: hysteria
-  server: 51.159.226.1
-  port: 49003
-  ports: 49003
+  server: '[2604'
+  port: 6600
+  ports: 6600
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -412,9 +412,9 @@ proxies:
   - h3
 - name: Unknown_hy_5
   type: hysteria
-  server: 51.159.226.1
-  port: 49003
-  ports: 49003
+  server: '[2604'
+  port: 6600
+  ports: 6600
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -442,7 +442,7 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_2
   type: hysteria2
-  server: 51.159.111.32
+  server: 163.172.21.105
   port: 5355
   password: dongtaiwang.com
   fast-open: true
@@ -450,8 +450,8 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_3
   type: hysteria2
-  server: 51.158.218.2
-  port: 50066
+  server: '[2604'
+  port: 6600
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
