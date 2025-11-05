@@ -342,7 +342,7 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hy_0
   type: hysteria
-  server: 62.210.127.217
+  server: 62.210.10.186
   port: 40099
   ports: 40099
   auth_str: dongtaiwang.com
@@ -384,7 +384,7 @@ proxies:
   - h3
 - name: Unknown_hy_3
   type: hysteria
-  server: 62.210.127.217
+  server: 62.210.10.186
   port: 40099
   ports: 40099
   auth_str: dongtaiwang.com
@@ -464,34 +464,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: Unknown_reality_1
-  type: vless
-  server: 2001:bc8:32d7:302::15
-  port: 34324
-  uuid: 26c462ba-a90c-4814-9d7c-a629bc0bdb5c
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: dash.cloudflare.com
-  reality-opts:
-    public-key: pHn5CHa2P6-lNBIkTOI3zJQN19jfNFkXxGFuyefpP0M
-    short-id: ''
-- name: Unknown_reality_5
-  type: vless
-  server: 2001:bc8:32d7:302::15
-  port: 34324
-  uuid: 26c462ba-a90c-4814-9d7c-a629bc0bdb5c
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: dash.cloudflare.com
-  reality-opts:
-    public-key: pHn5CHa2P6-lNBIkTOI3zJQN19jfNFkXxGFuyefpP0M
-    short-id: ''
 proxy-groups:
 - name: 节点选择
   type: select
@@ -534,8 +506,6 @@ proxy-groups:
   - Unknown_hy2_2
   - Unknown_hy2_3
   - Unknown_hy2_5
-  - Unknown_reality_1
-  - Unknown_reality_5
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -578,8 +548,6 @@ proxy-groups:
   - Unknown_hy2_2
   - Unknown_hy2_3
   - Unknown_hy2_5
-  - Unknown_reality_1
-  - Unknown_reality_5
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
