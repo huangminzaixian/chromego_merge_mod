@@ -174,19 +174,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_41
+- name: Unknown_anytls_41
+  type: anytls
   server: 62.210.10.140
-  port: 23556
-  type: tuic
-  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
+  port: 8443
   password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
   alpn:
-  - h3
-  sni: bing.com
+  - h2
+  - http/1.1
   skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
 - name: Unknown_hysteria_51
   type: hysteria
   server: 62.210.10.140
@@ -482,7 +483,7 @@ proxy-groups:
   - Unknown_hysteria_33
   - Unknown_hysteria_34
   - Unknown_hysteria_35
-  - Unknown_tuic_41
+  - Unknown_anytls_41
   - Unknown_hysteria_51
   - Unknown_vless_61
   - Unknown_tuic_71
@@ -524,7 +525,7 @@ proxy-groups:
   - Unknown_hysteria_33
   - Unknown_hysteria_34
   - Unknown_hysteria_35
-  - Unknown_tuic_41
+  - Unknown_anytls_41
   - Unknown_hysteria_51
   - Unknown_vless_61
   - Unknown_tuic_71
